@@ -32,7 +32,7 @@ module.exports = result
 ```
 ---
 ## testProblem5.js
-```js test.js
+```js
 const inventory = require('./inventory')
 const carYears = require('./testProblem4')
 const olderThan2000 = require('./Problem5')
