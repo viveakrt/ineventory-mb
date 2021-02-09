@@ -1,3 +1,8 @@
+/**
+ * This Method return array of car model in sorted order
+ * 
+ * @param {Object} inventory Array of Details of cars in Inventory
+ */
 function sortedListOfCar(inventory) {
     let carModel = []
     for (let i=0; i < inventory.length; i++) {

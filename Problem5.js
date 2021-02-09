@@ -1,3 +1,9 @@
+/**
+ * This Method returns array of list of cars before 2000 in inventory
+ * 
+ * @param {Object} inventory Array of Details of cars in Inventory
+ * @param {Array} carYears list of years of car in inventory
+ */
 function olderThan2000(inventory, carYears) {
     let oldCars = []
     let listOfCars = []
