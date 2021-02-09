@@ -10,7 +10,7 @@ function callById(inventory, id) {
         return car_model
     }
     for (let i=0; i < inventory.length; i++) {
-        cars = inventory[i];
+        let cars = inventory[i];
         if (cars.id === id) {
             car_model.push(inventory[i])
             return car_model;
