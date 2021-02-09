@@ -5,7 +5,7 @@
  * @param {number} id Id of car we required the detail
  */
 function callById(inventory, id) {
-    let car_model={}
+    let car_model=[]
     if(inventory.length===0 || id === undefined){
         return car_model
     }
@@ -15,7 +15,7 @@ function callById(inventory, id) {
             return car_model;
         }
     }
-    return {}
+    return []
 }
 
 module.exports = callById;
