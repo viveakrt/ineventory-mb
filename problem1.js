@@ -15,7 +15,7 @@ function callById(inventory, id) {
             return car_model;
         }
     }
-    return car_model
+    return {}
 }
 
 module.exports = callById;
