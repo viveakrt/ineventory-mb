@@ -1,11 +1,14 @@
 /**
  * This  Method return the last element in inventory object
  * 
- * @param {Object} inventory Array of Details of cars in Inventory
+ * @param {Array} inventory Array of Details of cars in Inventory
  */
-function lastCar(inventory) {
-
-    return inventory.pop();
+function lastCar(inventory=[]) {
+    if (inventory.length===0){
+        return []
+    }else{
+    return [inventory.pop()];
+    }
 }
 
 module.exports = lastCar;
