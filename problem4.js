@@ -3,14 +3,18 @@
  * @param {Object} inventory Array of Details of cars in Inventory
  */
 function listOfCarYears(inventory=[]) {
-    if (inventory.length===0){
+
+    if (inventory.length === 0){
         return []
     }else{
-    let carYears = []
-    for (let i=0; i < inventory.length; i++) {
-        carYears.push(inventory[i].car_year)
+        let carYears = []
+
+        for (let index=0; index < inventory.length; index++) {
+            carYears.push( inventory[index].car_year )
+        }
+    
+        return carYears
     }
-    return carYears
 }
-}
+
 module.exports = listOfCarYears

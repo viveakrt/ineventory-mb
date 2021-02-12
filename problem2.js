@@ -3,12 +3,13 @@
  * 
  * @param {Array} inventory Array of Details of cars in Inventory
  */
-function lastCar(inventory=[]) {
-    if (inventory.length===0){
+function lastCar(inventory) {
+
+    if (typeof inventory !== 'object' || inventory.length===0){
         return []
     }else{
-    return [inventory.pop()];
+        return [ inventory.pop() ]
     }
 }
 
-module.exports = lastCar;
+module.exports = lastCar

@@ -3,15 +3,19 @@
  * 
  * @param {Object} inventory Array of Details of cars in Inventory
  */
-function sortedListOfCar(inventory=[]) {
-    if (inventory.length===0){
+function sortedListOfCar(inventory) {
+
+    if (typeof inventory !== 'object' || inventory.length === 0){
         return []
     }else{
-    let carModel = []
-    for (let i=0; i < inventory.length; i++) {
-        carModel.push(inventory[i].car_model)
+        
+        let carModel = []
+        
+        for (let index=0; index < inventory.length; index++) {
+            carModel.push(inventory[index].car_model)
+        }
+        return carModel.sort()
     }
-    return carModel.sort()
 }
-}
+
 module.exports = sortedListOfCar

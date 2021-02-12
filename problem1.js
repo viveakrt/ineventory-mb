@@ -4,18 +4,21 @@
  * @param {object} inventory List of details of car in inventory
  * @param {number} id Id of car we required the detail
  */
-function callById(inventory=[], id=undefined) {
-    const car_model=[]
-    if(inventory.length===0 || id === undefined){
-        return car_model
+function callById(inventory, id) {
+    const carModel=[]
+
+    if( typeof inventory !== 'object' || inventory.length===0 || id === undefined){
+        return carModel
     }
-    for (let i=0; i < inventory.length; i++) {
-        let cars = inventory[i];
+
+    for (let index=0; index < inventory.length; index++) {
+        let cars = inventory[index]
         if (cars.id === id) {
-            car_model.push(inventory[i])
-            return car_model;
+            carModel.push(inventory[index])
+            return carModel
         }
     }
+
     return []
 }
 

@@ -3,18 +3,21 @@
  * 
  * @param {Object} inventory Array of Details of cars in Inventory
  */
-function BMWAndAudi(inventory=[]) {
-    if (inventory.length===0){
-            return []
+function BMWAndAudi(inventory) {
+    
+    if (typeof inventory !== 'object' || inventory.length===0){
+        return []
     }else{
+
         let bmwAndAudi = [];
-        for (let i=0; i< inventory.length; i++) {
-            let car = inventory[i];
-            if(car.car_make === 'BMW' || car.car_make === 'Audi')
+        
+        for (let index=0; index < inventory.length; index++) {
+            let car = inventory[index];
+            if(car.car_make === 'BMW' || car.car_make === 'Audi'){
                 bmwAndAudi.push(car)
-            else
-                continue
+            }
         }
+        
         return bmwAndAudi
     }
 }
