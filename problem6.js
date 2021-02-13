@@ -21,4 +21,5 @@ function BMWAndAudi(inventory) {
         return bmwAndAudi
     }
 }
+
 module.exports = BMWAndAudi
