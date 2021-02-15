@@ -1,4 +1,3 @@
 [build]
-  base    = "out/"
-  publish = "jsdoc"
-  command = "npm run docs"
+  command = "npm install jsdoc && jsdoc ."
+  publish = "out/"
