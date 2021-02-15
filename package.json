@@ -1,0 +1,24 @@
+{
+  "name": "inventory_vivek",
+  "version": "1.0.0",
+  "description": "```js const inventory = require('./inventory') const callById = require('./Problem1') const result = callById(inventory, 33) console.log(`Car ${result.id} is a ${result.car_year} ${result.car_make} ${result.car_model}`) ``` --- ## testProblem2.js ```js const inventory = require('./inventory') const lastCar = require('./Problem2') const result = lastCar(inventory) console.log(`Last car is a ${result.car_make} ${result.car_model}`) ``` --- ## testProblem3.js ```js const inventory = require('./inventory') const sortedListOfCar = require('./Problem3') const result = sortedListOfCar(inventory) console.log(result) ``` --- ## testProblem4.js ```js const inventory = require('./inventory') const listOfCarYears = require('./Problem4') const result = listOfCarYears(inventory) console.log(result) module.exports = result ``` --- ## testProblem5.js ```js const inventory = require('./inventory') const carYears = require('./testProblem4') const olderThan2000 = require('./Problem5') const result = olderThan2000(inventory, carYears) console.log(\"List of cars older than 2000:\", result) console.log(\"Total no.of cars older than 2000:\", result.length) ```",
+  "main": "inventory.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/viveak/inventory_vivek.git"
+  },
+  "keywords": [],
+  "author": "Vivek",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/viveak/inventory_vivek/issues"
+  },
+  "homepage": "https://gitlab.com/viveak/inventory_vivek#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "jsdoc": "^3.6.6"
+  }
+}
