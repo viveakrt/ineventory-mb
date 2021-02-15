@@ -16,5 +16,4 @@ pages:
   artifacts:
     paths:
       - public
-  tags:
-   - docker
+
