@@ -6,3 +6,5 @@ testProblem5.js
 testProblem6.js
 *.txt
 node_modules/
+out/
+public/
