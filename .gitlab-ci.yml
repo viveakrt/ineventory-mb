@@ -1,17 +1,20 @@
-image: node:latest
+image: node:lts
 
-before_script:
-  - npm install
-  
 cache:
   paths:
-    - node_modules/
-      
-# Publish tagged versions to npm
-publish:
-  stage: deploy
-  only:
-    - tags
+  - node_modules/
+
+stages:
+  - build-documentation
+
+pages:
+  stage: build-documentation
   script:
-    - echo '//registry.npmjs.org/:_authToken=${NPM_AUTH}'>.npmrc
-    - npm publish
+   - npm rebuild
+   - npm install
+   - npm run build-documentation
+  artifacts:
+    paths:
+      - public
+  tags:
+   - docker
