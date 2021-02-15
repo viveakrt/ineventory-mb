@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Home</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Home</h1>
+
+    
+
+
+
+    
+
+
+    <h3> </h3>
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    <section>
+        <article><h1><code> Documenting Code With JSDoc Example</code></h1>
+<h2>testProblem1.js</h2>
+<pre class="prettyprint source lang-js"><code>const inventory =  require('./inventory')
+const callById = require('./Problem1')
+const result = callById(inventory, 33)
+console.log(`Car ${result.id} is a ${result.car_year} ${result.car_make} ${result.car_model}`)
+</code></pre>
+<hr>
+<h2>testProblem2.js</h2>
+<pre class="prettyprint source lang-js"><code>const inventory = require('./inventory')
+const lastCar = require('./Problem2')
+const result = lastCar(inventory)
+console.log(`Last car is a ${result.car_make} ${result.car_model}`)
+</code></pre>
+<hr>
+<h2>testProblem3.js</h2>
+<pre class="prettyprint source lang-js"><code>const inventory = require('./inventory')
+const sortedListOfCar = require('./Problem3')
+const result = sortedListOfCar(inventory)
+console.log(result)
+</code></pre>
+<hr>
+<h2>testProblem4.js</h2>
+<pre class="prettyprint source lang-js"><code>const inventory = require('./inventory')
+const listOfCarYears = require('./Problem4')
+const result = listOfCarYears(inventory)
+console.log(result)
+module.exports = result
+</code></pre>
+<hr>
+<h2>testProblem5.js</h2>
+<pre class="prettyprint source lang-js"><code>const inventory = require('./inventory')
+const carYears = require('./testProblem4')
+const olderThan2000 = require('./Problem5')
+const result = olderThan2000(inventory, carYears)
+console.log(&quot;List of cars older than 2000:&quot;, result)
+console.log(&quot;Total no.of cars older than 2000:&quot;, result.length)
+</code></pre>
+<h2>testProblem6.js</h2>
+<pre class="prettyprint source lang-js"><code>const inventory = require('./inventory')
+const BmwAndAudi = require('./Problem6')
+const result = BmwAndAudi(inventory)
+console.log(JSON.stringify(result))
+</code></pre>
+<hr>
+<h1>Problem Statement</h1>
+<p>To help us use arrays with real world problems we are going to simulate a used car dealer that has 50 cars in their inventory.
+The car dealer has all of their inventory housed in the array seen below.  Scroll down past the data to find out how you can help the car dealer.</p>
+<p>PROJECT RESTRICTION: You can't use map, reduce, or filter to solve these problems.  Only use native JavaScript for loops. No other types of loops are allowed.</p>
+<h2>Example for loop:</h2>
+<p>arr = [1,2,3,4];
+for (i = 0; i &lt; arr.length; i++) {
+arr[i];  // 1,2,3,4
+}</p>
+<p>Create a function for each problem in a file called
+problem1.js
+problem2.js
+problem3.js
+and so on.</p>
+<p>Ensure that the functions in each file is exported and tested in its own file called
+testProblem1.js
+testProblem2.js
+testProblem3.js
+and so on.</p>
+<h1>Problem #1</h1>
+<p>The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by calling a function that will return the data for that car. Then log the car's year, make, and model in the console log in the format of:</p>
+<pre class="prettyprint source lang-bash"><code>&quot;Car 33 is a *car year goes here* *car make goes here* *car model goes here*&quot;
+</code></pre>
+<h1>Problem #2</h1>
+<p>The dealer needs the information on the last car in their inventory. Execute a function to find what the make and model of the last car in the inventory is?  Log the make and model into the console in the format of:</p>
+<pre class="prettyprint source lang-bash"><code>&quot;Last car is a *car make goes here* *car model goes here*&quot;
+</code></pre>
+<h1>Problem #3</h1>
+<p>The marketing team wants the car models listed alphabetically on the website. Execute a function to Sort all the car model names into alphabetical order and log the results in the console as it was returned.</p>
+<h1>Problem #4</h1>
+<p>The accounting team needs all the years from every car on the lot. Execute a function that will return an array from the dealer data containing only the car years and log the result in the console as it was returned.</p>
+<h1>Problem #5</h1>
+<p>The car lot manager needs to find out how many cars are older than the year 2000. Using the array you just obtained from the previous problem, find out how many cars were made before the year 2000 and return the array of older cars and log its length.</p>
+<h1>Problem #6</h1>
+<p>A buyer is interested in seeing only BMW and Audi cars within the inventory.  Execute a function and return an array that only contains BMW and Audi cars.  Once you have the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.</p></article>
+    </section>
+
+
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#BMWAndAudi">BMWAndAudi</a></li><li><a href="global.html#callById">callById</a></li><li><a href="global.html#lastCar">lastCar</a></li><li><a href="global.html#listOfCarYears">listOfCarYears</a></li><li><a href="global.html#olderThan2000">olderThan2000</a></li><li><a href="global.html#sortedListOfCar">sortedListOfCar</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.6</a> on Mon Feb 15 2021 17:33:58 GMT+0530 (India Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

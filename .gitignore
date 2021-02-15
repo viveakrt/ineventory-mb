@@ -7,3 +7,4 @@ testProblem6.js
 *.txt
 node_modules/
 out/
+public/

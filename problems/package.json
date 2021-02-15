@@ -5,7 +5,7 @@
   "main": "inventory.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-documentation": "npx jsdoc -d public -r -R ./README.md ./"
+    "build-documentation": "npx jsdoc -d public -r -R ./readme.md ./"
   },
 
   "repository": {
