@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-documentation": "npx jsdoc -d public -r -R ./README.md ./out/"
   },
+  
   "repository": {
     "type": "git",
     "url": "git+ssh://git@gitlab.com/viveak/inventory_vivek.git"

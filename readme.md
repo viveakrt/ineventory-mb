@@ -1,9 +1,9 @@
-# ` Documenting Code With JSDoc Example`
+# ` Documenting Code With JSDoc Example` 
 
 ## testProblem1.js
 
 ```js
-const inventory = require('./inventory')
+const inventory =  require('./inventory')
 const callById = require('./Problem1')
 const result = callById(inventory, 33)
 console.log(`Car ${result.id} is a ${result.car_year} ${result.car_make} ${result.car_model}`)
@@ -76,22 +76,24 @@ PROJECT RESTRICTION: You can't use map, reduce, or filter to solve these problem
 
 Example for loop:
 -----------------
+
 arr = [1,2,3,4];
 for (i = 0; i < arr.length; i++) {
-    arr[i];  // 1,2,3,4
+arr[i];  // 1,2,3,4
 }
 
 Create a function for each problem in a file called
-    problem1.js
-    problem2.js
-    problem3.js
+problem1.js
+problem2.js
+problem3.js
 and so on.
 
 Ensure that the functions in each file is exported and tested in its own file called
-    testProblem1.js
-    testProblem2.js
-    testProblem3.js
+testProblem1.js
+testProblem2.js
+testProblem3.js
 and so on.
+
 # Problem #1
 
 The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by calling a function that will return the data for that car. Then log the car's year, make, and model in the console log in the format of:
@@ -99,6 +101,7 @@ The dealer can't recall the information for a car with an id of 33 on his lot. H
 ```bash
 "Car 33 is a *car year goes here* *car make goes here* *car model goes here*"
 ```
+
 # Problem #2
 
 The dealer needs the information on the last car in their inventory. Execute a function to find what the make and model of the last car in the inventory is?  Log the make and model into the console in the format of:
@@ -106,6 +109,7 @@ The dealer needs the information on the last car in their inventory. Execute a f
 ```bash
 "Last car is a *car make goes here* *car model goes here*"
 ```
+
 # Problem #3
 
 The marketing team wants the car models listed alphabetically on the website. Execute a function to Sort all the car model names into alphabetical order and log the results in the console as it was returned.
