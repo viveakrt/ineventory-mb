@@ -1,0 +1,3 @@
+[build]
+  command = "npm install jsdoc && jsdoc ."
+  publish = "out/"
